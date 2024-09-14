@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +15,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/blog/{slug}', 'AuthorController@post');
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/category', function () {
+    return view('category');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/single', function () {
+    return view('single');
+});
+
+Route::get('/author', function () {
+    return view('author');
+});
+
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+Route::get('/your-view', [CommentController::class, 'show'])->name('comments.show');
