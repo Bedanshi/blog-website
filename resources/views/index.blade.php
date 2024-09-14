@@ -1,7 +1,163 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-@section('content')
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Personal Blog By Bedanshi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/imgs/theme/favicon.png") }}">
+    <!-- Template CSS  -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
+    <link rel="stylesheet" href="{{ asset("/assets/css/widgets.css") }}">
+    <link rel="stylesheet" href="{{ asset("/assets/css/responsive.css") }}">
+</head>
 
+<body class="home-page-1">
+    <div class="scroll-progress bg-grey-900"></div>
+    <!-- Start Preloader -->
+    <div class="preloader text-center">
+        <div class="loader"></div>
+    </div>
+    <!--Offcanvas sidebar-->
+    <aside id="sidebar-wrapper" class="custom-scrollbar offcanvas-sidebar">
+        <button class="off-canvas-close"><img class="svg-icon-24" src="{{ asset("/assets/imgs/theme/svg/close.svg") }}" alt=""></button>
+        <div class="sidebar-inner">
+            <div class="sidebar-widget widget-creative-menu">
+                <ul>
+                    <li><a href="{{ url("/category") }}">Design<sup>235</sup></a></li>
+                    <li><a href="{{ url("category-big.html") }}">Lifestyle<sup>186</sup></a></li>
+                    <li><a href="{{ url("category-grid.html") }}">Travel Tips<sup>98</sup></a></li>
+                    <li><a href="{{ url("category-list.html") }}">Healthy<sup>247</sup></a></li>
+                </ul>
+            </div>
+            <div class="offcanvas-copyright mt-65">
+                <h6 class="text-muted text-uppercase mb-20 font-heading text-white">Flow Magazine</h6>
+                <p>
+                    Dive into a world of culinary delights, travel tales, and personal adventures. On this blog, I share my food reviews, recount my travel experiences, and offer a glimpse into my journey. Whether you’re seeking inspiration for your next meal or travel destination, or simply enjoy a good story, you’ll find it here. Join me as I explore flavors, destinations, and the moments that make life extraordinary.
+                </p>
+                <p><strong class="color-black">Address</strong><br>
+                    123 Main Street<br>
+                    New York, NY 10001</p>
+                <p><strong class="color-black">Phone</strong><br>
+                    (+01) 234 567 89</p>
+            </div>
+        </div>
+    </aside>
+    <!-- Start Header -->
+    <header class="main-header header-sticky">
+        <div class="position-relative">
+            <div class="container align-self-center">
+                <div class="header-style-1">
+                    <div class="logo">
+                        <a href="{{ url("/index") }}"><img src="{{ asset("/assets/imgs/theme/logo.svg") }}" alt=""></a>
+                    </div>
+                    <div class="main-nav d-none d-lg-block">
+                        <nav>
+                            <!--Desktop menu-->
+                            <ul class="main-menu d-none d-lg-inline">
+                                <li class="menu-item-has-children">
+                                    <a href="{{ url("/index") }}">Home</a>
+
+                                </li>
+                                <li> <a href="{{ url("/about") }}">About</a> </li>
+                                <li class="menu-item-has-children">
+                                    <a href="{{ url("/category") }}">Blog</a>
+
+                                </li>
+                                <li> <a href="{{ url("/contact") }}">Contact</a> </li>
+                            </ul>
+                            <!--Mobile menu-->
+                            <ul id="mobile-menu" class="d-block d-lg-none text-muted">
+                                <li class="menu-item-has-children">
+                                    <a href="{{ url("/index") }}">Home</a>
+                                </li>
+                                <li class="menu-item-has-children"><a href="{{ url("#") }}">Pages</a>
+                                    <ul class="sub-menu font-small">
+                                        <li><a href="{{ url("/about") }}">About</a></li>
+                                        <li><a href="{{ url("/contact") }}">Contact</a></li>
+                                        <li><a href="{{ url("/register") }}">Register</a></li>
+                                        <li><a href="{{ url("/login") }}">Login</a></li>
+                                        <li><a href="{{ url("/search") }}">Search</a></li>
+                                        <li><a href="{{ url("/author") }}">Author</a></li>
+                                        <li><a href="{{ url("page-404.html") }}">404 page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="{{ url("#") }}">Category</a>
+                                    <ul class="sub-menu font-small">
+                                        <li><a href="{{ url("category-list.html") }}">List layout</a></li>
+                                        <li><a href="{{ url("category-grid.html") }}">Grid layout</a></li>
+                                        <li><a href="{{ url("category-list-2.html") }}">List 2 layout</a></li>
+                                        <li><a href="{{ url("category-big.html") }}">Big layout</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="{{ url("#") }}">Single post</a>
+                                    <ul class="sub-menu font-small">
+                                        <li><a href="{{ url("/single") }}">Default</a></li>
+                                        <li><a href="{{ url("single-2.html") }}">Big image</a></li>
+                                        <li><a href="{{ url("single-3.html") }}">Right sidebar</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--end: main-nav-->
+                    <div class="header-right">
+                        <button class="search-icon d-md-inline">
+                            <img src="{{ asset("/assets/imgs/theme/svg/search.svg") }}" alt="">
+                        </button>
+                        <button class="btn btn-md bg-dark text-white ml-15 box-shadow d-none d-lg-inline"><a href="https://themeforest.net/item/flow-html-personal-blog-template/30381120">Buy Now</a></button>
+                    </div>
+                </div>
+                <div class="mobile_menu d-lg-none d-block"></div>
+            </div>
+            <div class="off-canvas-toggle-cover d-inline-block">
+                <div class="off-canvas-toggle hidden d-inline-block" id="off-canvas-toggle">
+                    <img class="svg-icon-24" src="{{ asset("/assets/imgs/theme/svg/menu.svg") }}" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-square"></div>
+    <!--Start search form-->
+    <div class="main-search-form bg-brand-4">
+        <div class="container">
+            <div class=" pt-50 pb-50 ">
+                <div class="row mb-20">
+                    <div class="col-12 align-self-center main-search-form-cover m-auto">
+                        <p class="text-center"><span class="display-1">Search</span></p>
+                        <form action="#" class="search-header">
+                            <div class="input-group w-100">
+                                <input type="text" class="form-control" placeholder="Search articles, places and people">
+                                <div class="input-group-append">
+                                    <button class="btn btn-search bg-white" type="submit">
+                                        <img class="svg-icon-24" src="{{ asset("/assets/imgs/theme/svg/search.svg") }}" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-80 text-center">
+                    <div class="col-12 font-small suggested-area">
+                        <h5 class="suggested font-heading mb-20 text-grey-400"> <strong>Suggested keywords:</strong></h5>
+                        <ul class="list-inline d-inline-block">
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Health</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Travel tips</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Lifestyle</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Technology</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Food</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Books</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Drink</a></li>
+                            <li class="list-inline-item"><a href="{{ url("/category") }}">Fashion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Start Main content -->
     <main>
         <section class="featured-slider-1 pt-65 pb-65">
@@ -14,11 +170,11 @@
                                 <div class="col-lg-6 align-self-center">
                                     <div class="post-meta-1 mb-20">
                                         <a href="{{ url("/category") }}" class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
-                                        <span class="post-date text-muted font-md">September 15, 2024</span>
+                                        <span class="post-date text-muted font-md">September 15, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30">
                                         <a href="{{ url("/single") }}">
-                                          Lifestyle Blog By Bedanshi
+                                            Lifestyle Blogs By Bedanshi Subedi
                                         </a>
                                     </h2>
                                     <div class="post-excerpt text-grey-400 mb-30">
@@ -29,7 +185,7 @@
                                             <img src="{{ asset("/assets/imgs/authors/b.jpg") }}" alt="">
                                             <span class="author-namge">Bedanshi Subedi</span>
                                         </a>
-
+                                        <span class="time-to-read has-dot">6 mins to read</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -42,29 +198,57 @@
                                 <div class="col-lg-6 align-self-center">
                                     <div class="post-meta-1 mb-20">
                                         <a href="{{ url("/category") }}" class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3">Design</a>
-                                        <span class="post-date text-muted font-md">September 22, 2024</span>
+                                        <span class="post-date text-muted font-md">September 22, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30">
                                         <a href="{{ url("/single") }}">
-                                            9 Things I Love About Going To College
+                                            9 Things I Love About Shaving My Head During Quarantine
                                         </a>
                                     </h2>
-                                    <div class="post-excerpt text-grey-400 mb-30">College offers a blend of exciting experiences and personal growth. I enjoy meeting diverse people, engaging in interesting classes, and participating in vibrant campus activities. The freedom, networking opportunities, and memorable moments make college life truly special.       </div>
+                                    <div class="post-excerpt text-grey-400 mb-30">
+                                        Sit nemore imperdiet elaboraret eu, commune inciderint mei no. Ex usu ignota eripuit oportere. Vis at choro oratio, vitae quodsi ei sit. Mei ne habeo legimus qualisque.
+                                    </div>
                                     <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
                                         <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author-3.jpg") }}" alt="">
-                                            <span class="author-namge">Barshana</span>
+                                            <img src="{{ asset("/assets/imgs/authors/baba.jpg") }}" alt="">
+                                            <span class="author-namge">Angela</span>
                                         </a>
-                                       </div>
+                                        <span class="time-to-read has-dot">9 mins to read</span>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img class="border-radius-10" src="{{ asset("/assets/imgs/news/thumb-11.jpg") }}" alt="flow">
+                                    <img class="border-radius-10" src="{{ asset("/assets/imgs/authors/baba.jpg") }}" alt="flow">
                                 </div>
                             </div>
                         </div>
-
-
-
+                        <div class="slider-single">
+                            <div class="row">
+                                <div class="col-lg-6 align-self-center">
+                                    <div class="post-meta-1 mb-20">
+                                        <a href="{{ url("/category") }}" class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Audition</a>
+                                        <span class="post-date text-muted font-md">September 25, 2021</span>
+                                    </div>
+                                    <h2 class="post-title mb-30">
+                                        <a href="{{ url("/single") }}">
+                                            Essential Qualities of Highly Successful Music in this year
+                                        </a>
+                                    </h2>
+                                    <div class="post-excerpt text-grey-400 mb-30">
+                                        Maluisset patrioque his no, pro ex tempor vivendo deleniti. Reque dignissim his in, vix te summo maluisset assueverit, et vidisse luptatum accusata eos. Ad vix diam accumsan.
+                                    </div>
+                                    <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
+                                        <a href="{{ url("/author") }}">
+                                            <img src="{{ asset("/assets/imgs/authors/tre.jpg") }}" alt="">
+                                            <span class="author-namge">Sophie</span>
+                                        </a>
+                                        <span class="time-to-read has-dot">7 mins to read</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="border-radius-10" src="{{ asset("/assets/imgs/news/IMG_1312.jpg") }}" alt="flow">
+                                </div>
+                            </div>
+                        </div>
                         <div class="slider-single">
                             <div class="row">
                                 <div class="col-lg-6 align-self-center">
@@ -78,18 +262,18 @@
                                         </a>
                                     </h2>
                                     <div class="post-excerpt text-grey-400 mb-30">
-                                        Quo ex aeterno luptatum mnesarchum, an duis veri harum eam, mel ex diceret dolorum. Sed no causae dissentias, quo cu ridens gubergren voluptatibus.
+                                        College offers a blend of exciting experiences and personal growth. I enjoy meeting diverse people, engaging in interesting classes, and participating in vibrant campus activities. The freedom, networking opportunities, and memorable moments make college life truly special.       </div>
                                     </div>
                                     <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
                                         <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author-2.jpg") }}" alt="">
-                                            <span class="author-namge">Nila Subedi</span>
+                                            <img src="{{ asset("/assets/imgs/authors/lar.jpg") }}" alt="">
+                                            <span class="author-namge">John Lennon</span>
                                         </a>
                                         <span class="time-to-read has-dot">16 mins to read</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img class="border-radius-10" src="{{ asset("/assets/imgs/news/thumb-13.jpg") }}" alt="flow">
+                                    <img class="border-radius-10" src="{{ asset("/assets/imgs/authors/bar.jpg") }}" alt="flow">
                                 </div>
                             </div>
                         </div>
@@ -261,8 +445,17 @@
                                     <a href="{{ url("/category") }}" class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
                                 </div>
                             </div>
-
-
+                            <div class="post-content p-30">
+                                <div class="post-card-content">
+                                    <div class="entry-meta meta-1 float-left font-md mb-10">
+                                        <span class="post-on has-dot">12 September</span>
+                                    </div>
+                                    <h5 class="post-title font-md">
+                                        <a href="{{ url("/single") }}">5 Kinds of Food-Shamers You Will Encounter (and How to Deal) </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
                     </article>
                     <article class="col-lg-4 col-md-6 mb-40 wow fadeIn animated">
                         <div class="post-card-1 border-radius-10 hover-up">
@@ -582,3 +775,99 @@
     </main>
     <!-- End Main content -->
     <!--end site-bottom-->
+    <!-- Footer Start-->
+    <footer class="pt-65 bg-dark">
+        <div class="container">
+            <div class="row mb-65">
+                <div class="col-md-6">
+                    <div class="logo wow fadeIn animated">
+                        <a href="{{ url("/index") }}"> <img src="{{ asset("/assets/imgs/theme/logo-white.svg") }}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex text-right text-sm-left align-self-center justify-content-end wow fadeIn animated">
+                        <h5 class="mr-15 text-white mb-0 align-self-center">All you need to build new site</h5>
+                        <button class="btn btn-lg bg-brand-1">Download Now</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="bottom-line mt-40"></div>
+                </div>
+            </div>
+            <div class="row bottom-area-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="sidebar-widget widget-about wow fadeIn animated mb-30">
+                        <div class="widget-header-2 position-relative mb-30">
+                            <h5 class="mt-5 mb-30">About</h5>
+                        </div>
+                        <div class="textwidget">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                            </p>
+                            <p><strong class="color-black">Address</strong><br>
+                                123 Main Street<br>
+                                New York, NY 10001</p>
+                            <p><strong class="color-black">Phone</strong><br>
+                                (+01) 234 567 89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sidebar-widget widget_categories wow fadeIn animated mb-30" data-wow-delay="0.1s">
+                        <div class="widget-header-2 position-relative mb-30">
+                            <h5 class="mt-5 mb-30">Quick link</h5>
+                        </div>
+                        <ul class="font-small">
+                            <li class="cat-item cat-item-2"><a href="{{ url("#") }}">About me</a></li>
+                            <li class="cat-item cat-item-4"><a href="{{ url("#") }}">Help & Support</a></li>
+                            <li class="cat-item cat-item-5"><a href="{{ url("#") }}">Licensing Policy</a></li>
+                            <li class="cat-item cat-item-6"><a href="{{ url("#") }}">Refund Policy</a></li>
+                            <li class="cat-item cat-item-7"><a href="{{ url("#") }}">Hire me</a></li>
+                            <li class="cat-item cat-item-7"><a href="{{ url("#") }}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sidebar-widget widget_tagcloud wow fadeIn animated mb-30" data-wow-delay="0.2s">
+                        <div class="widget-header-2 position-relative mb-30">
+                            <h5 class="mt-5 mb-30">Tagcloud</h5>
+                        </div>
+                        <div class="tagcloud mt-50">
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">beautiful</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">New York</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">droll</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">intimate</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">loving</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">travel</a>
+                            <a class="tag-cloud-link" href="{{ url("/category") }}">fighting </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy-right pt-30 mt-20 wow fadeIn animated font-md">
+                <p class="float-md-left font-small text-muted">&copy; 2021, Flow - Design by <a href="https://alithemes.com/" target="_blank">AliThemes</a></p>
+                <ul class="social-network d-inline-block list-inline color-white mb-20 float-right">
+                    <li class="list-inline-item"><a href="{{ url("#") }}" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ url("#") }}" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ url("#") }}" target="_blank" title="Pin it"><i class="elegant-icon social_pinterest"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ url("#") }}" target="_blank" title="Pin it"><i class="elegant-icon social_skype"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="dark-mark"></div>
+    <!-- Vendor JS-->
+    <script src="{{ asset("/assets/js/vendor/modernizr-3.5.0.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/jquery-3.5.1.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/bootstrap.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/jquery.slicknav.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/slick.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/wow.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/jquery.scrollUp.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/vendor/jquery.theia.sticky.js") }}"></script>
+    <!-- Template  JS -->
+    <script src="{{ asset("/assets/js/main.js") }}"></script>
+</body>
+
+</html>

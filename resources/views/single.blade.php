@@ -1,39 +1,122 @@
 @extends('layouts.master')
 
 @section('content')
-
-    <!-- Start Main content -->
-    <main>
-        <div class="container single-content">
-            <div class="entry-header entry-header-style-1 mb-50 pt-50">
-                <div class="post-meta-1 mb-20">
-                    <a href="{{ url("/category") }}" class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3" tabindex="0">Lifestyle</a>
-                    <span class="post-date text-muted font-md">September 15, 2021</span>
+<!-- Start Header -->
+<header class="main-header header-sticky">
+    <div class="position-relative">
+        <div class="container align-self-center">
+            <div class="header-style-1">
+                <div class="logo">
+                    <a href="{{ url("/index") }}"><img src="{{ asset("/assets/imgs/theme/logo.svg") }}" alt=""></a>
                 </div>
-                <h1 class="entry-title mb-50 fw-700">
-                    30 Best Lifestyle Blogs to Follow in 2021
-                </h1>
-                <div class="row align-self-center">
-                    <div class="col-md-6">
-                        <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
-                            <a href="{{ url("/author") }}" tabindex="0">
-                                <img src="{{ asset("/assets/imgs/authors/author.jpg") }}" alt="">
-                                <span class="author-namge">Kate Adie</span>
-                            </a>
-                            <span class="time-to-read has-dot">6 mins to read</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-right d-none d-md-inline">
-                        <div class="single-social-share clearfix wow fadeIn animated font-sm">
-                            <div class="entry-meta meta-1 font-small color-grey float-left mt-10">
-                                <span class="hit-count mr-15"><i class="elegant-icon icon_comment_alt mr-5"></i>182 comments</span>
-                                <span class="hit-count mr-15"><i class="elegant-icon icon_like mr-5"></i>268 likes</span>
-                                <span class="hit-count"><i class="elegant-icon icon_star-half_alt mr-5"></i>Rate: 9/10</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="main-nav d-none d-lg-block">
+                    <nav>
+                        <!--Desktop menu-->
+                        <ul class="main-menu d-none d-lg-inline">
+                            <li class="menu-item-has-children">
+                                <a href="{{ url("/index") }}">Home</a>
+
+                            </li>
+                            <li> <a href="{{ url("/about") }}">About</a> </li>
+                            <li class="menu-item-has-children">
+                                <a href="{{ url("/category") }}">Blog</a>
+
+                            </li>
+                            <li> <a href="{{ url("/contact") }}">Contact</a> </li>
+                        </ul>
+                        <!--Mobile menu-->
+                        <ul id="mobile-menu" class="d-block d-lg-none text-muted">
+                            <li class="menu-item-has-children">
+                                <a href="{{ url("/") }}">Home</a>
+                            </li>
+                            <li class="menu-item-has-children"><a href="{{ url("#") }}">Pages</a>
+                                <ul class="sub-menu font-small">
+                                    <li><a href="{{ url("/about") }}">About</a></li>
+                                    <li><a href="{{ url("/contact") }}">Contact</a></li>
+                                    <li><a href="{{ url("/register") }}">Register</a></li>
+                                    <li><a href="{{ url("/login") }}">Login</a></li>
+                                    <li><a href="{{ url("/search") }}">Search</a></li>
+                                    <li><a href="{{ url("/author") }}">Author</a></li>
+                                    <li><a href="{{ url("page-404.html") }}">404 page</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="{{ url("#") }}">Category</a>
+                                <ul class="sub-menu font-small">
+                                    <li><a href="{{ url("category-list.html") }}">List layout</a></li>
+                                    <li><a href="{{ url("category-grid.html") }}">Grid layout</a></li>
+                                    <li><a href="{{ url("category-list-2.html") }}">List 2 layout</a></li>
+                                    <li><a href="{{ url("category-big.html") }}">Big layout</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="{{ url("#") }}">Single post</a>
+                                <ul class="sub-menu font-small">
+                                    <li><a href="{{ url("/single") }}">Default</a></li>
+                                    <li><a href="{{ url("single-2.html") }}">Big image</a></li>
+                                    <li><a href="{{ url("single-3.html") }}">Right sidebar</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--end: main-nav-->
+                <div class="header-right">
+                    <button class="search-icon d-md-inline">
+                        <img src="{{ asset("/assets/imgs/theme/svg/search.svg") }}" alt="">
+                    </button>
+                    <button class="btn btn-md bg-dark text-white ml-15 box-shadow d-none d-lg-inline"><a href="https://themeforest.net/item/flow-html-personal-blog-template/30381120">Buy Now</a></button>
                 </div>
             </div>
+            <div class="mobile_menu d-lg-none d-block"></div>
+        </div>
+        <div class="off-canvas-toggle-cover d-inline-block">
+            <div class="off-canvas-toggle hidden d-inline-block" id="off-canvas-toggle">
+                <img class="svg-icon-24" src="{{ asset("/assets/imgs/theme/svg/menu.svg") }}" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="bg-square"></div>
+<!--Start search form-->
+<div class="main-search-form bg-brand-4">
+    <div class="container">
+        <div class=" pt-50 pb-50 ">
+            <div class="row mb-20">
+                <div class="col-12 align-self-center main-search-form-cover m-auto">
+                    <p class="text-center"><span class="display-1">Search</span></p>
+                    <form action="#" class="search-header">
+                        <div class="input-group w-100">
+                            <input type="text" class="form-control" placeholder="Search articles, places and people">
+                            <div class="input-group-append">
+                                <button class="btn btn-search bg-white" type="submit">
+                                    <img class="svg-icon-24" src="{{ asset("/assets/imgs/theme/svg/search.svg") }}" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-80 text-center">
+                <div class="col-12 font-small suggested-area">
+                    <h5 class="suggested font-heading mb-20 text-grey-400"> <strong>Suggested keywords:</strong></h5>
+                    <ul class="list-inline d-inline-block">
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Health</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Travel tips</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Lifestyle</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Technology</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Food</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Books</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Drink</a></li>
+                        <li class="list-inline-item"><a href="{{ url("/category") }}">Fashion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Start Main content -->
+    <main>
+
             <!--end single header-->
             <figure class="image mb-30 m-auto text-center border-radius-10 hover-up-3">
                 <img class="border-radius-10" src="{{ asset("/assets/imgs/news/news-16.jpg") }}" alt="post-title" />

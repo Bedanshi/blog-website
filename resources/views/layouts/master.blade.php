@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-    <div class="no-js" lang="en"></div>
+<html class="no-js" lang="en">
 
- <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Personal Blog By Bedanshi Subedi</title>
+    <title>Flow - Personal Blog HTML Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/imgs/theme/favicon.png") }}">
@@ -13,10 +12,9 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
     <link rel="stylesheet" href="{{ asset("/assets/css/widgets.css") }}">
     <link rel="stylesheet" href="{{ asset("/assets/css/responsive.css") }}">
- </head>
+</head>
 
-  <body>
-    <div class="home-page-1"></div>
+<body class="home-page-1">
     <div class="scroll-progress bg-grey-900"></div>
     <!-- Start Preloader -->
     <div class="preloader text-center">
@@ -35,24 +33,20 @@
                 </ul>
             </div>
             <div class="offcanvas-copyright mt-65">
-                <h6 class="text-muted text-uppercase mb-20 font-heading text-white">Bedanshi's Blog</h6>
+                <h6 class="text-muted text-uppercase mb-20 font-heading text-white">Flow Magazine</h6>
                 <p>
-                    See the world through my eyes!!
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque.
                 </p>
                 <p><strong class="color-black">Address</strong><br>
-                    Kathmandu City<br>
-                    Nepal</p>
+                    123 Main Street<br>
+                    New York, NY 10001</p>
                 <p><strong class="color-black">Phone</strong><br>
-                    9800929304</p>
+                    (+01) 234 567 89</p>
             </div>
         </div>
     </aside>
 
-        <!-- Topbar Start -->
-         @include('partials.header')
-        <!-- Topbar End -->
-
-        @yield('content')
+    @section('content')
 
         <!-- Footer Start -->
         @include('partials.footer')
