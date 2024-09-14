@@ -47,5 +47,12 @@ Route::get('/author', function () {
     return view('author');
 });
 
-Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
-Route::get('/your-view', [CommentController::class, 'show'])->name('comments.show');
+
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+
+
