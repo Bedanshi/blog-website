@@ -11,6 +11,7 @@
         <!--figure-->
         <article class="entry-wraper mb-50">
             <div class="excerpt mb-30">
+                <h1>{{$post->title}}</h1>
                 <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner
                     flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly
                     the manatee.</p>

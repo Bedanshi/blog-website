@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\CommentController;
@@ -16,17 +17,11 @@ use App\Http\Controllers\CommentController;
 */
 
 
-Route::get('/blog/{slug}', 'AuthorController@post');
+Route::get('/blog/{slug}', [HomeController::class,'post']);
 
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class,'index']);
 
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
 
 Route::get('/category', function () {
     return view('category');
@@ -56,3 +51,6 @@ Route::get('/register', function () {
 });
 
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
