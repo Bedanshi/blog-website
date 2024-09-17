@@ -542,8 +542,8 @@ blockquote ol:last-child{margin-bottom:0;}
 /*Author box*/
 .bt-1{border-top:1px solid;}
 .border-color-1{border-color:rgb(225,225,225);}
-.author-bio{margin-bottom:40px;text-align:left;display:flex;padding-bottom:40px;}
-.author-bio .author-image img{border-radius:10px;width:190px;height:216px;}
+.author-bio{margin-bottom:40px;text-align:center;display:flex;padding-bottom:40px;box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);}
+.author-bio .author-image img{border-radius:10px;display:flex;flex-direction: column;width:190px;height:216px;}
 .author-bio .author-image{flex-grow:0;flex-shrink:0;overflow:hidden;width:190px;height:216px;margin-right:30px;}
 .author-bio .author-info{flex-grow:1;}
 .author-bio h3{font-size:22px;margin-bottom:10px;}
@@ -570,12 +570,12 @@ blockquote ol:last-child{margin-bottom:0;}
 .comments-area .date{font-size:14px;color:#999999;margin-bottom:0;margin-left:20px;}
 .comments-area .comment{margin-bottom:10px;color:#777777;font-size:15px;}
 .comments-area .btn-reply{display:inline-block;font-weight:normal;text-decoration:none;margin-right:15px;border-radius:10px;font-size:14px;text-transform:capitalize;border:1px solid var(--color-brand-2);background:var(--color-brand-4);line-height:1;padding:15px 20px;box-shadow:var(--box-shadow-hover);}
-.comment-form{padding-top:45px;margin-top:50px;margin-bottom:20px;}
+.comment-form{padding-top:45px;margin-top:50px;margin-bottom:20px;width:900px;justify-content: center;margin-right: 20px;}
 .comment-form .form-group{margin-bottom:30px;}
-.form-group{margin-bottom:30px;}
+.form-group{margin-bottom:30px;justify-content: center;}
 .comment-form h4{margin-bottom:40px;font-size:18px;line-height:22px;color:#2a2a2a;}
 .comment-form .name{padding-left:0px;}
-.form-control{border:none;border-radius:10px;height:64px;padding-left:24px;padding-right:24px;color:var(--color-grey-400);font-size:18px;background:#F3F3F3;font-weight:700;}
+.form-control{border:none;border-radius:10px;height:64px;padding-left:24px;padding-right:74px;color:var(--color-grey-400);font-size:18px;background:#F3F3F3;font-weight:700;}
 .form-control:focus{background:#eaeaea;}
 .search-header .form-control{background:#fff;}
 .search-header .form-control:focus{background:#fff;}

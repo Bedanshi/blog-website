@@ -4,7 +4,7 @@
         <div class="row mb-65">
             <div class="col-md-6">
                 <div class="logo wow fadeIn animated">
-                    <a href="{{ url("index.html") }}"> <img src="{{ asset("/assets/imgs/theme/logo-white.svg") }}" alt=""></a>
+                    <a href="{{ url("/") }}"> <img src="{{ asset("/assets/imgs/theme/logo-white.svg") }}" alt=""></a>
                 </div>
             </div>
 
@@ -35,10 +35,9 @@
                         <h5 class="mt-5 mb-30">Quick link</h5>
                     </div>
                     <ul class="font-small">
-                        <li class="cat-item cat-item-2"><a href="{{ url("#") }}">About me</a></li>
-                        <li class="cat-item cat-item-4"><a href="{{ url("#") }}">Help & Support</a></li>
-                        <li class="cat-item cat-item-7"><a href="{{ url("#") }}">Hire me</a></li>
-                        <li class="cat-item cat-item-7"><a href="{{ url("#") }}">Contact</a></li>
+                        <li class="cat-item cat-item-2"><a href="{{ url("/about") }}">About me</a></li>
+                        <li class="cat-item cat-item-4"><a href="{{ url("/contact") }}">Help & Support</a></li>
+                         <li class="cat-item cat-item-7"><a href="{{ url("/contact") }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +47,7 @@
                         <h5 class="mt-5 mb-30">Tagcloud</h5>
                     </div>
                     <div class="tagcloud mt-50">
-                        <a class="tag-cloud-link" href="{{ url("category.html") }}">beautiful</a>
+                        <a class="tag-cloud-link" href="{{ url("/category") }}">beautiful</a>
                         <a class="tag-cloud-link" href="{{ url("category.html") }}">Nepal</a>
                         <a class="tag-cloud-link" href="{{ url("category.html") }}">droll</a>
                         <a class="tag-cloud-link" href="{{ url("category.html") }}">loving</a>

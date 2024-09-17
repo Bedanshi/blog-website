@@ -9,28 +9,34 @@
                     <article class="col-md-12 first-article text-center mb-30">
                         <div class="post-content">
                             <div class="post-meta-1 mb-20">
-                                <a href="{{ url("/category") }}" class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3" tabindex="0">Lifestyle</a>
+                                <a href="{{ url('/category') }}"
+                                    class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3"
+                                    tabindex="0">Lifestyle</a>
                                 <span class="post-date text-muted font-md">September 15, 2021</span>
                             </div>
                             <h1 class="post-title mb-30 fw-700">
-                                <a href="{{ url("/single") }}" tabindex="0">
+                                <a href="{{ url('/single') }}" tabindex="0">
                                     30 Best Lifestyle Blogs to Follow in 2021
                                 </a>
                             </h1>
                             <div class="post-excerpt text-grey-400 mb-30">
-                                Tempus ultricies augue luctus et ut suscipit. Morbi arcu, ultrices purus dolor erat bibendum sapien metus.
+                                Tempus ultricies augue luctus et ut suscipit. Morbi arcu, ultrices purus dolor erat bibendum
+                                sapien metus.
                             </div>
                         </div>
                         <figure class="border-radius-10 hover-up-3">
-                            <a href="{{ url("/single") }}"><img src="{{ asset("/assets/imgs/news/news-16.jpg") }}" alt="" class="border-radius-10"></a>
+                            <a href="{{ url('/single') }}"><img src="{{ asset('/assets/imgs/news/news-16.jpg') }}"
+                                    alt="" class="border-radius-10"></a>
                         </figure>
                     </article>
                     <article class="col-lg-6 col-md-6 mb-30 wow fadeIn animated">
                         <div class="post-card-1 large border-radius-10 hover-up">
-                            <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(assets/imgs/news/news-8.jpg)">
-                                <a class="img-link" href="{{ url("/single") }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-8.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
-                                    <a href="{{ url("/category") }}" class="tag-category bg-info shadown-1 text-dark button-shadow hover-up-3">Travel</a>
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-info shadown-1 text-dark button-shadow hover-up-3">Travel</a>
                                 </div>
                             </div>
                             <div class="post-content p-30">
@@ -39,11 +45,12 @@
                                         <span class="post-on has-dot">27 August</span>
                                     </div>
                                     <h4 class="post-title mb-30">
-                                        <a href="{{ url("/single") }}">After a Few Dates, They Traveled to the Other Side of the World</a>
+                                        <a href="{{ url('/single') }}">After a Few Dates, They Traveled to the Other Side of
+                                            the World</a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
-                                        <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author.jpg") }}" alt="">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author.jpg') }}" alt="">
                                             <span class="author-namge">Bedanshi Subedi</span>
                                         </a>
                                         <span class="time-to-read has-dot">6 mins to read</span>
@@ -54,10 +61,12 @@
                     </article>
                     <article class="col-lg-6 col-md-6 mb-30 wow fadeIn animated">
                         <div class="post-card-1 large border-radius-10 hover-up">
-                            <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(assets/imgs/news/news-5.jpg)">
-                                <a class="img-link" href="{{ url("/single") }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-5.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
-                                    <a href="{{ url("/category") }}" class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Food</a>
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                 </div>
                                 <span class="top-right-icon bg-white"><i class="elegant-icon icon_ribbon_alt "></i></span>
                             </div>
@@ -67,11 +76,12 @@
                                         <span class="post-on has-dot">18 August</span>
                                     </div>
                                     <h4 class="post-title mb-30">
-                                        <a href="{{ url("/single") }}">5 Kinds of Food-Shamers You Will Encounter (and How to Deal) </a>
+                                        <a href="{{ url('/single') }}">5 Kinds of Food-Shamers You Will Encounter (and How
+                                            to Deal) </a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
-                                        <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author-2.jpg") }}" alt="">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-2.jpg') }}" alt="">
                                             <span class="author-namge">John Lennon</span>
                                         </a>
                                         <span class="time-to-read has-dot">16 mins to read</span>
@@ -82,10 +92,12 @@
                     </article>
                     <article class="col-lg-6 col-md-6 mb-0 wow fadeIn animated">
                         <div class="post-card-1 large border-radius-10 hover-up">
-                            <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(assets/imgs/news/news-6.jpg)">
-                                <a class="img-link" href="{{ url("/single") }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-6.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
-                                    <a href="{{ url("/category") }}" class="tag-category bg-dark  shadown-1 text-white button-shadow hover-up-3">Magazine</a>
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-dark  shadown-1 text-white button-shadow hover-up-3">Magazine</a>
                                 </div>
                             </div>
                             <div class="post-content p-30">
@@ -94,11 +106,12 @@
                                         <span class="post-on has-dot">05 September</span>
                                     </div>
                                     <h4 class="post-title mb-30">
-                                        <a href="{{ url("/single") }}">Runner with Autism Graces the Latest Cover of Women's Running </a>
+                                        <a href="{{ url('/single') }}">Runner with Autism Graces the Latest Cover of
+                                            Women's Running </a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
-                                        <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author-3.jpg") }}" alt="">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-3.jpg') }}" alt="">
                                             <span class="author-namge">Sarah Harding</span>
                                         </a>
                                         <span class="time-to-read has-dot">12 mins to read</span>
@@ -109,10 +122,12 @@
                     </article>
                     <article class="col-lg-6 col-md-6 mb-0 wow fadeIn animated">
                         <div class="post-card-1 large border-radius-10 hover-up">
-                            <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(assets/imgs/news/news-7.jpg)">
-                                <a class="img-link" href="{{ url("/single") }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-7.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
-                                    <a href="{{ url("/category") }}" class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Food</a>
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                 </div>
                             </div>
                             <div class="post-content p-30">
@@ -121,11 +136,12 @@
                                         <span class="post-on has-dot">06 September</span>
                                     </div>
                                     <h4 class="post-title mb-30">
-                                        <a href="{{ url("/single") }}">10 Snacks a Food Writer Packs for Day Hikes and Car Trips</a>
+                                        <a href="{{ url('/single') }}">10 Snacks a Food Writer Packs for Day Hikes and Car
+                                            Trips</a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
-                                        <a href="{{ url("/author") }}">
-                                            <img src="{{ asset("/assets/imgs/authors/author-4.jpg") }}" alt="">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-4.jpg') }}" alt="">
                                             <span class="author-namge">Nadine Coyle</span>
                                         </a>
                                         <span class="time-to-read has-dot">14 mins to read</span>
@@ -147,21 +163,23 @@
                         <div class="col-lg-8">
                             <div class="header-title-2 mb-65">
                                 <h4 class="mb-0 text-grey-400 wow fadeIn animated">
-                                    <img src="{{ asset("/assets/imgs/theme/svg/send.svg") }}" alt="">
+                                    <img src="{{ asset('/assets/imgs/theme/svg/send.svg') }}" alt="">
                                     <span>Subscribe</span>
                                 </h4>
                                 <h3 class="font-heading wow fadeIn animated">to Our Newsletter</h3>
                             </div>
                             <form class="form-subcriber mt-30 d-flex wow fadeIn animated">
-                                <input type="email" class="form-control bg-white font-small" placeholder="Enter your email">
+                                <input type="email" class="form-control bg-white font-small"
+                                    placeholder="Enter your email">
                                 <button class="btn bg-dark text-white" type="submit">Subscribe</button>
                             </form>
                         </div>
                     </div>
-                    <img src="{{ asset("/assets/imgs/theme/sketch-1.png") }}" alt="" class="sketch-1 wow fadeIn animated">
+                    <img src="{{ asset('/assets/imgs/theme/sketch-1.png') }}" alt=""
+                        class="sketch-1 wow fadeIn animated">
                 </div>
             </div>
         </section>
     </main>
     <!-- End Main content -->
-    <!--end site-bottom-->
+@endsection
