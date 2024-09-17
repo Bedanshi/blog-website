@@ -18,8 +18,10 @@ use App\Http\Controllers\PostController;
 
 
 Route::get('/blog/{slug}', [HomeController::class,'post']);
+Route::get('/blog/{slug}', [HomeController::class,'post']);
 
 
+Route::get('/', [HomeController::class,'index']);
 Route::get('/', [HomeController::class,'index']);
 
 

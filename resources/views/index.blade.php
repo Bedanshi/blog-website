@@ -1,6 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+@extends('layouts.master')
+
+@section('content')
     <!-- Start Main content -->
     <main>
         <section class="featured-slider-1 pt-65 pb-65">
@@ -12,6 +15,8 @@
                             <div class="row">
                                 <div class="col-lg-6 align-self-center">
                                     <div class="post-meta-1 mb-20">
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
                                         <span class="post-date text-muted font-md">September 15, 2021</span>
@@ -26,8 +31,15 @@
                                         glimpse into my journey. Whether you’re seeking inspiration for your next meal or
                                         travel destination, or simply enjoy a good story, you’ll find it here. Join me as I
                                         explore flavors, destinations, and the moments that make life extraordinary.
+                                        Dive into a world of culinary delights, travel tales, and personal adventures. On
+                                        this blog, I share my food reviews, recount my travel experiences, and offer a
+                                        glimpse into my journey. Whether you’re seeking inspiration for your next meal or
+                                        travel destination, or simply enjoy a good story, you’ll find it here. Join me as I
+                                        explore flavors, destinations, and the moments that make life extraordinary.
                                     </div>
                                     <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/b.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/b.jpg') }}" alt="">
                                             <span class="author-namge">Bedanshi Subedi</span>
@@ -36,6 +48,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <img class="border-radius-10" src="{{ asset('/assets/imgs/news/bd.jpg') }}"
+                                        alt="flow">
                                     <img class="border-radius-10" src="{{ asset('/assets/imgs/news/bd.jpg') }}"
                                         alt="flow">
                                 </div>
@@ -47,9 +61,12 @@
                                     <div class="post-meta-1 mb-20">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3">Design</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3">Design</a>
                                         <span class="post-date text-muted font-md">September 22, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             9 Things I Love About Shaving My Head During Quarantine
                                         </a>
@@ -57,8 +74,12 @@
                                     <div class="post-excerpt text-grey-400 mb-30">
                                         Sit nemore imperdiet elaboraret eu, commune inciderint mei no. Ex usu ignota eripuit
                                         oportere. Vis at choro oratio, vitae quodsi ei sit. Mei ne habeo legimus qualisque.
+                                        Sit nemore imperdiet elaboraret eu, commune inciderint mei no. Ex usu ignota eripuit
+                                        oportere. Vis at choro oratio, vitae quodsi ei sit. Mei ne habeo legimus qualisque.
                                     </div>
                                     <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/baba.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/baba.jpg') }}" alt="">
                                             <span class="author-namge">Angela</span>
@@ -67,6 +88,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <img class="border-radius-10" src="{{ asset('/assets/imgs/authors/baba.jpg') }}"
+                                        alt="flow">
                                     <img class="border-radius-10" src="{{ asset('/assets/imgs/authors/baba.jpg') }}"
                                         alt="flow">
                                 </div>
@@ -78,9 +101,12 @@
                                     <div class="post-meta-1 mb-20">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Audition</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Audition</a>
                                         <span class="post-date text-muted font-md">September 25, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             Essential Qualities of Highly Successful Music in this year
                                         </a>
@@ -89,8 +115,13 @@
                                         Maluisset patrioque his no, pro ex tempor vivendo deleniti. Reque dignissim his in,
                                         vix te summo maluisset assueverit, et vidisse luptatum accusata eos. Ad vix diam
                                         accumsan.
+                                        Maluisset patrioque his no, pro ex tempor vivendo deleniti. Reque dignissim his in,
+                                        vix te summo maluisset assueverit, et vidisse luptatum accusata eos. Ad vix diam
+                                        accumsan.
                                     </div>
                                     <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/tre.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/tre.jpg') }}" alt="">
                                             <span class="author-namge">Sophie</span>
@@ -99,6 +130,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <img class="border-radius-10" src="{{ asset('/assets/imgs/news/IMG_1312.jpg') }}"
+                                        alt="flow">
                                     <img class="border-radius-10" src="{{ asset('/assets/imgs/news/IMG_1312.jpg') }}"
                                         alt="flow">
                                 </div>
@@ -110,14 +143,38 @@
                                     <div class="post-meta-1 mb-20">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-success shadown-1 text-dark button-shadow hover-up-3">Healthy</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-success shadown-1 text-dark button-shadow hover-up-3">Healthy</a>
                                         <span class="post-date text-muted font-md">August 12, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             Why We Need to Stop Talking About Food and Guilt
                                         </a>
                                     </h2>
                                     <div class="post-excerpt text-grey-400 mb-30">
+                                        College offers a blend of exciting experiences and personal growth. I enjoy meeting
+                                        diverse people, engaging in interesting classes, and participating in vibrant campus
+                                        activities. The freedom, networking opportunities, and memorable moments make
+                                        college life truly special. </div>
+                                </div>
+                                <div class="post-meta-2 font-md d-flext align-self-center mb-md-30">
+                                    <a href="{{ url('/author') }}">
+                                        <img src="{{ asset('/assets/imgs/authors/lar.jpg') }}" alt="">
+                                        <span class="author-namge">John Lennon</span>
+                                    </a>
+                                    <span class="time-to-read has-dot">16 mins to read</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="border-radius-10" src="{{ asset('/assets/imgs/authors/bar.jpg') }}"
+                                    alt="flow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                                         College offers a blend of exciting experiences and personal growth. I enjoy meeting
                                         diverse people, engaging in interesting classes, and participating in vibrant campus
                                         activities. The freedom, networking opportunities, and memorable moments make
@@ -210,9 +267,12 @@
                                     <div class="post-meta-1 mb-20 mt-50">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Lifestyle</a>
                                         <span class="post-date text-muted font-md">September 15, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30 fw-700">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             The 28 Best Skincare Products of 2021
                                         </a>
@@ -222,10 +282,16 @@
                                         bibendum sapien metus. Sit mi, pharetra, morbi arcu id. Pellentesque dapibus nibh
                                         augue senectus. Ad pri docendi aliquando, per an minim novum fuisset, eam doctus
                                         accumsan ad. Id veritus tibique per
+                                        Tempus ultricies augue luctus et ut suscipit. Morbi arcu, ultrices purus dolor erat
+                                        bibendum sapien metus. Sit mi, pharetra, morbi arcu id. Pellentesque dapibus nibh
+                                        augue senectus. Ad pri docendi aliquando, per an minim novum fuisset, eam doctus
+                                        accumsan ad. Id veritus tibique per
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <figure class="position-relative">
+                                        <img class="border-radius-10 post-thumb"
+                                            src="{{ asset('/assets/imgs/news/news-17.jpg') }}" alt="flow">
                                         <img class="border-radius-10 post-thumb"
                                             src="{{ asset('/assets/imgs/news/news-17.jpg') }}" alt="flow">
                                     </figure>
@@ -238,9 +304,12 @@
                                     <div class="post-meta-1 mb-20 mt-50">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-warning shadown-1 text-dark button-shadow hover-up-3">Beauty</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-warning shadown-1 text-dark button-shadow hover-up-3">Beauty</a>
                                         <span class="post-date text-muted font-md">September 15, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30 fw-700">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             Rice Water for Hair Growth: Does It Actually Work?
                                         </a>
@@ -248,10 +317,14 @@
                                     <div class="post-excerpt text-grey-400 mb-30">
                                         Qualisque persecuti eu vis. Et his eruditi fastidii gloriatur. In nec aliquam
                                         lobortis definitionem, aeterno qualisque appellantur ea sea
+                                        Qualisque persecuti eu vis. Et his eruditi fastidii gloriatur. In nec aliquam
+                                        lobortis definitionem, aeterno qualisque appellantur ea sea
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <figure class="position-relative">
+                                        <img class="border-radius-10 post-thumb"
+                                            src="{{ asset('/assets/imgs/news/news-18.jpg') }}" alt="flow">
                                         <img class="border-radius-10 post-thumb"
                                             src="{{ asset('/assets/imgs/news/news-18.jpg') }}" alt="flow">
                                     </figure>
@@ -264,9 +337,12 @@
                                     <div class="post-meta-1 mb-20 mt-50">
                                         <a href="{{ url('/category') }}"
                                             class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3">Music</a>
+                                        <a href="{{ url('/category') }}"
+                                            class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3">Music</a>
                                         <span class="post-date text-muted font-md">September 15, 2021</span>
                                     </div>
                                     <h2 class="post-title mb-30 fw-700">
+                                        <a href="{{ url('/single') }}">
                                         <a href="{{ url('/single') }}">
                                             5 Science-Backed Reasons Why Music is Good for You
                                         </a>
@@ -274,10 +350,14 @@
                                     <div class="post-excerpt text-grey-400 mb-30">
                                         An vis natum detracto nominati, ei mundi animal definitionem his, saepe indoctum
                                         pericula an sea. Vix ut admodum nostrum fastidii.
+                                        An vis natum detracto nominati, ei mundi animal definitionem his, saepe indoctum
+                                        pericula an sea. Vix ut admodum nostrum fastidii.
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <figure class="position-relative">
+                                        <img class="border-radius-10 post-thumb"
+                                            src="{{ asset('/assets/imgs/news/news-19.jpg') }}" alt="flow">
                                         <img class="border-radius-10 post-thumb"
                                             src="{{ asset('/assets/imgs/news/news-19.jpg') }}" alt="flow">
                                     </figure>
@@ -318,6 +398,8 @@
                                     <div class="post-meta-2 font-md">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/author.jpg') }}" alt="">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author.jpg') }}" alt="">
                                             <span class="author-namge">Bedanshi Subedi</span>
                                         </a>
                                         <span class="time-to-read has-dot">6 mins to read</span>
@@ -332,7 +414,12 @@
                             <div class="post-thumb thumb-overlay img-hover-slide position-relative"
                                 style="background-image: url(assets/imgs/news/news-5.jpg)">
                                 <a class="img-link" href="{{ url('/single') }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-5.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                     <a href="{{ url('/category') }}"
                                         class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                 </div>
@@ -346,8 +433,12 @@
                                     <h4 class="post-title mb-30">
                                         <a href="{{ url('/single') }}">5 Kinds of Food-Shamers You Will Encounter (and How
                                             to Deal) </a>
+                                        <a href="{{ url('/single') }}">5 Kinds of Food-Shamers You Will Encounter (and How
+                                            to Deal) </a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-2.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/author-2.jpg') }}" alt="">
                                             <span class="author-namge">John Lennon</span>
@@ -363,7 +454,12 @@
                             <div class="post-thumb thumb-overlay img-hover-slide position-relative"
                                 style="background-image: url(assets/imgs/news/news-6.jpg)">
                                 <a class="img-link" href="{{ url('/single') }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-6.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-dark  shadown-1 text-white button-shadow hover-up-3">Magazine</a>
                                     <a href="{{ url('/category') }}"
                                         class="tag-category bg-dark  shadown-1 text-white button-shadow hover-up-3">Magazine</a>
                                 </div>
@@ -376,8 +472,12 @@
                                     <h4 class="post-title mb-30">
                                         <a href="{{ url('/single') }}">Runner with Autism Graces the Latest Cover of
                                             Women's Running </a>
+                                        <a href="{{ url('/single') }}">Runner with Autism Graces the Latest Cover of
+                                            Women's Running </a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-3.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/author-3.jpg') }}" alt="">
                                             <span class="author-namge">Sarah Harding</span>
@@ -393,7 +493,12 @@
                             <div class="post-thumb thumb-overlay img-hover-slide position-relative"
                                 style="background-image: url(assets/imgs/news/news-7.jpg)">
                                 <a class="img-link" href="{{ url('/single') }}"></a>
+                            <div class="post-thumb thumb-overlay img-hover-slide position-relative"
+                                style="background-image: url(assets/imgs/news/news-7.jpg)">
+                                <a class="img-link" href="{{ url('/single') }}"></a>
                                 <div class="post-meta-1 mb-20">
+                                    <a href="{{ url('/category') }}"
+                                        class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                     <a href="{{ url('/category') }}"
                                         class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3">Food</a>
                                 </div>
@@ -406,8 +511,12 @@
                                     <h4 class="post-title mb-30">
                                         <a href="{{ url('/single') }}">10 Snacks a Food Writer Packs for Day Hikes and Car
                                             Trips</a>
+                                        <a href="{{ url('/single') }}">10 Snacks a Food Writer Packs for Day Hikes and Car
+                                            Trips</a>
                                     </h4>
                                     <div class="post-meta-2 font-md">
+                                        <a href="{{ url('/author') }}">
+                                            <img src="{{ asset('/assets/imgs/authors/author-4.jpg') }}" alt="">
                                         <a href="{{ url('/author') }}">
                                             <img src="{{ asset('/assets/imgs/authors/author-4.jpg') }}" alt="">
                                             <span class="author-namge">Nadine Coyle</span>
@@ -424,4 +533,5 @@
 
 
     </main>
+@endsection
 @endsection
