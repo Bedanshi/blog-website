@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\PostController;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,8 @@ use App\Http\Controllers\PostController;
 
 
 Route::get('/blog/{slug}', [HomeController::class,'post']);
-Route::get('/blog/{slug}', [HomeController::class,'post']);
 
 
-Route::get('/', [HomeController::class,'index']);
 Route::get('/', [HomeController::class,'index']);
 
 
@@ -52,6 +51,7 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/{slug}', [HomeController::class, 'page']);
 
 
 

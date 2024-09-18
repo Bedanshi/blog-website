@@ -3,12 +3,12 @@
 @section('content')
     <main>
         <figure class="image mb-30 m-auto text-center border-radius-10 hover-up-3">
-            <img class="border-radius-10" src="{{ Voyager::image($post->image) }}" alt="{{ $post->title }}" style="width: 700px; height: 400px;" />
+            <img class="border-radius-10" src="{{ Voyager::image($page->image) }}" alt="{{ $page->title }}" style="width: 700px; height: 400px;" />
         </figure>
         <article class="entry-wraper mb-50">
             <div class="excerpt mb-30">
-                <h1>{{ $post->title }}</h1>
-                <p>{!! $post->body !!}</p>
+                <h1>{{ $page->title }}</h1>
+                <p>{!! $page->body !!}</p>
             </div>
         </article>
 
