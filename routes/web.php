@@ -51,9 +51,6 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/{slug}', [HomeController::class, 'page']);
-
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

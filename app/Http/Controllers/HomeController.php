@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
-use TCG\Voyager\Models\Page;
 use TCG\Voyager\Models\User;
 use TCG\Voyager\Models\Category;
 
@@ -37,11 +36,5 @@ foreach ($post as $value) {
         $post= Post::where('slug', '=',$slug)->firstOrFail();
         return view ('single', compact('post'));
     }
-    public function showPage($slug)
-   {
-    $page = Page::where('slug', $slug)->firstOrFail();
-    return view('page', compact('page'));
-}
 
 }
-
