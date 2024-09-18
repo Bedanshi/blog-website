@@ -1,17 +1,6 @@
  <!-- Footer Start-->
  <footer class="pt-65 bg-dark">
     <div class="container">
-        <div class="row mb-65">
-            <div class="col-md-6">
-                <div class="logo wow fadeIn animated">
-                    <a href="{{ url("/") }}"> <img src="{{ asset("/assets/imgs/theme/logo-white.svg") }}" alt=""></a>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="bottom-line mt-40"></div>
-            </div>
-        </div>
         <div class="row bottom-area-2">
             <div class="col-lg-4 col-md-6">
                 <div class="sidebar-widget widget-about wow fadeIn animated mb-30">
@@ -81,6 +70,3 @@
 <script src="{{ asset("/assets/js/vendor/jquery.theia.sticky.js") }}"></script>
 <!-- Template  JS -->
 <script src="{{ asset("/assets/js/main.js") }}"></script>
-</body>
-
-</html>

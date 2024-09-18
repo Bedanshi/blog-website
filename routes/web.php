@@ -20,7 +20,7 @@ use TCG\Voyager\Facades\Voyager;
 
 Route::get('/blog/{slug}', [HomeController::class,'post']);
 
-
+Route::get('/page/{slug}', [HomeController::class,'showPage']);
 Route::get('/', [HomeController::class,'index']);
 
 
